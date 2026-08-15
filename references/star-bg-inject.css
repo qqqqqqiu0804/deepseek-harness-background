@@ -1,0 +1,30 @@
+/* ===== custom star background (append after the original dist/assets/index-*.css) ===== */
+:root { --star-alpha: 0.45; --star-rgb: 249,250,251; }
+body[data-ds-dark-theme] { --star-rgb: 27,27,28; }
+body {
+  background-image: url("/assets/star-bg.jpg") !important;
+  background-size: cover !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  background-attachment: fixed !important;
+}
+body.star-off { background-image: none !important; }
+body {
+  --dsw-alias-bg-base: rgba(var(--star-rgb), var(--star-alpha)) !important;
+  --dsw-alias-bg-layer-1: rgba(var(--star-rgb), var(--star-alpha)) !important;
+  --dsw-alias-bg-layer-2: rgba(var(--star-rgb), var(--star-alpha)) !important;
+  --dsw-alias-bg-layer-3: rgba(var(--star-rgb), var(--star-alpha)) !important;
+  --dsw-specific-sidebar-fill: rgba(var(--star-rgb), var(--star-alpha)) !important;
+  --dsw-specific-input-major: rgba(var(--star-rgb), var(--star-alpha)) !important;
+  --dsw-specific-menu: rgba(var(--star-rgb), var(--star-alpha)) !important;
+}
+body[data-ds-dark-theme] {
+  --dsw-alias-bg-base: rgba(var(--star-rgb), var(--star-alpha)) !important;
+  --dsw-alias-bg-layer-1: rgba(var(--star-rgb), var(--star-alpha)) !important;
+  --dsw-alias-bg-layer-2: rgba(var(--star-rgb), var(--star-alpha)) !important;
+  --dsw-alias-bg-layer-3: rgba(var(--star-rgb), var(--star-alpha)) !important;
+  --dsw-specific-sidebar-fill: rgba(var(--star-rgb), var(--star-alpha)) !important;
+  --dsw-specific-input-major: rgba(var(--star-rgb), var(--star-alpha)) !important;
+  --dsw-specific-menu: rgba(var(--star-rgb), var(--star-alpha)) !important;
+}
+._boot_9gj4p_6 { background: transparent !important; }
